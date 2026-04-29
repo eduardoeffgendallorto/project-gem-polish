@@ -39,7 +39,7 @@ export const ProductsGrid = ({
 
   return (
     <section className="container py-10 md:py-14">
-      <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12 animate-fade-up">
+      <div data-reveal className="text-center max-w-2xl mx-auto mb-8 md:mb-12 animate-fade-up">
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-3">{title}</h1>
         <p className="text-muted-foreground text-base md:text-lg">{subtitle}</p>
       </div>

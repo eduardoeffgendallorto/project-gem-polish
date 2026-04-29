@@ -90,7 +90,7 @@ const Produto = () => {
         </button>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          <div className="bg-surface rounded-3xl p-8 md:p-12 shadow-card flex items-center justify-center min-h-[360px] md:min-h-[460px]">
+          <div data-reveal className="bg-surface rounded-3xl p-8 md:p-12 shadow-card flex items-center justify-center min-h-[360px] md:min-h-[460px]">
             <img
               src={product.img}
               alt={product.imgAlt}
@@ -98,7 +98,7 @@ const Produto = () => {
             />
           </div>
 
-          <div>
+          <div data-reveal data-reveal-delay="0.15">
             <span
               className={cn(
                 "inline-block text-xs font-semibold uppercase tracking-wider rounded-full px-3 py-1 mb-4",
