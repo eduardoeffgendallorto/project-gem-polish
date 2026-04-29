@@ -26,7 +26,7 @@ const Carrinho = () => {
           <ArrowLeft className="h-4 w-4" /> Continuar comprando
         </Link>
 
-        <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
+        <h1 data-reveal className="text-3xl md:text-5xl font-bold tracking-tight mb-8">
           Revise seu pedido.
         </h1>
 
@@ -44,7 +44,7 @@ const Carrinho = () => {
           </div>
         ) : (
           <div className="grid lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 bg-surface rounded-3xl shadow-card p-2 md:p-4">
+            <div data-reveal className="lg:col-span-2 bg-surface rounded-3xl shadow-card p-2 md:p-4">
               {items.map((item, idx) => (
                 <div
                   key={idx}
@@ -74,7 +74,7 @@ const Carrinho = () => {
               ))}
             </div>
 
-            <aside className="bg-surface rounded-3xl shadow-card p-6 h-fit lg:sticky lg:top-24">
+            <aside data-reveal data-reveal-delay="0.15" className="bg-surface rounded-3xl shadow-card p-6 h-fit lg:sticky lg:top-24">
               <h2 className="font-bold text-lg mb-4">Resumo</h2>
               <div className="flex justify-between text-sm mb-2">
                 <span className="text-muted-foreground">Itens</span>

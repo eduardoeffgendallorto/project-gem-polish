@@ -23,7 +23,7 @@ const Index = () => {
       <section className="bg-gradient-hero">
         <div className="container py-14 md:py-24">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="animate-fade-up">
+            <div data-reveal className="animate-fade-up">
               <span className="inline-flex items-center gap-2 bg-surface border border-border rounded-full px-4 py-1.5 text-xs md:text-sm font-medium shadow-card mb-6">
                 <Sparkles className="h-3.5 w-3.5 text-primary" />
                 iPhones <span className="text-primary font-semibold">Lacrados</span> com Garantia
@@ -50,7 +50,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="relative flex items-center justify-center">
+            <div data-reveal data-reveal-delay="0.15" className="relative flex items-center justify-center">
               <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full" aria-hidden />
               <img
                 src={heroPhone}
@@ -69,8 +69,8 @@ const Index = () => {
             { icon: ShieldCheck, t: "Garantia oficial", d: "1 ano nos lacrados" },
             { icon: Truck, t: "Envio rápido", d: "Para todo o Brasil" },
             { icon: Sparkles, t: "Procedência Apple", d: "Originais e seminovos verificados" },
-          ].map(({ icon: Icon, t, d }) => (
-            <div key={t} className="flex items-center justify-center gap-3">
+          ].map(({ icon: Icon, t, d }, i) => (
+            <div data-reveal data-reveal-delay={(i * 0.1).toString()} key={t} className="flex items-center justify-center gap-3">
               <Icon className="h-5 w-5 text-primary" />
               <div className="text-left">
                 <p className="text-sm font-semibold leading-none">{t}</p>
@@ -83,7 +83,7 @@ const Index = () => {
 
       {/* DESTAQUES */}
       <section className="container py-14 md:py-20">
-        <div className="text-center max-w-2xl mx-auto mb-10">
+        <div data-reveal className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-3">
             Custo-Benefício: Novos & Seminovos
           </h2>
@@ -99,7 +99,7 @@ const Index = () => {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div data-reveal className="mt-10 text-center">
           <Link
             to="/iphones"
             className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-background font-medium hover:opacity-90 transition"

@@ -7,6 +7,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
   const isSeminovo = product.seminovo;
   return (
     <Link
+      data-reveal
       to={`/produto/${product.id}`}
       className="group flex flex-col h-full rounded-3xl bg-surface p-5 md:p-6 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 border border-border/40"
     >
